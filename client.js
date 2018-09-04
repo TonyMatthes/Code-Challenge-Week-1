@@ -4,16 +4,15 @@ $(document).ready(onReady);
 
 function onReady(){
     $('#createButton').on('click', addDiv);
-    
 }
 
 function addDiv(){
     counter++;
     console.log(counter);
     $('body').append(`
-    <div class="colorBox">
+    <div class="colorBoxRed">
         <p>${counter}</p>
-        <button class="swap">Swap</button>
-        <button class="delete">Delete</button>
+        <button class="swapButton">Swap</button>
+        <button class="deleteButton">Delete</button>
     </div`);
 }
