@@ -10,5 +10,10 @@ function onReady(){
 function addDiv(){
     counter++;
     console.log(counter);
-    $('body').append('<div class=colorBox></div');
+    $('body').append(`
+    <div class="colorBox">
+        <p>${counter}</p>
+        <button class="swap">Swap</button>
+        <button class="delete">Delete</button>
+    </div`);
 }
